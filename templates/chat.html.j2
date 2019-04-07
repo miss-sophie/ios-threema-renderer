@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../assets/stylesheet-threema.css">
+    <meta charset="UTF-8">
+    <title>Threema Export</title>
+</head>
+<body>
+    {% for m in messages %}
+        <div class="message-card {{ m.direction }}">
+            {% if m.quote != None %}
+                <div class="message-quote">{{ m.quote }}</div>
+            {% endif %}
+            <div class="message-text">{{ m.message }}</div>
+            <div class="message-timestamp">{{ m.timestamp }}</div>
+        </div>
+    {% endfor %}
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("./fonts/Roboto-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("./fonts/Roboto-Bold.ttf");
+    font-weight: bold;
+}
+
+body {
+    background: #303030;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', SansSerif;
+    font-weight: normal;
+}
+
+header {
+    font-weight: bold;
+}
+
+.message-card {
+    min-width: 2em;
+    max-width: 20em;
+    margin-top: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border-radius: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+}
+
+.message-text {
+    color: white;
+}
+
+.message-quote {
+    color: gray;
+    border-left: solid;
+    border-color: green;
+    padding: 0.3em;
+    margin: 0.3em;
+    margin-bottom: 0.5em;
+}
+
+.message-timestamp {
+    text-align: right;
+    color: gray;
+}
+
+.send {
+    background-color: #1c2632;
+    left: 50%;
+}
+
+.received {
+    background-color: #1e1a1a;
+    right: 50%;
+}
+
+div + div {
+    margin-bottom: 0.2em;
+}
