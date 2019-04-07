@@ -1,17 +1,10 @@
 from jinja2 import Template,Environment, PackageLoader, select_autoescape
-from dateutil import parser
 from date_locals_enums import Timezone, Spacer
 import logging
 import os
 import datetime
 import sys
-"""
-<<< empfangen
->>> gesendet
-> Zitat
 
-Vorgehen: richtung strippen, datum strppen, dann auf zitat parsen und rest ist content
-"""
 locale = 'de_DE'
 messages = []
 
@@ -138,7 +131,7 @@ if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
     if len(sys.argv) is not 2:
         print("Invalid arguments.")
-        print('threema_renderer.py <path-to-fole.txt>')
+        print('threema_renderer.py <path-to-file.txt>')
         exit(1)
     file = sys.argv[1]
     if os.path.isfile(file):
